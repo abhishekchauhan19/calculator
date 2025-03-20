@@ -1,0 +1,82 @@
+/* Futuristic Calculator CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0d0d0d;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.main-box {
+    background: rgba(20, 20, 20, 0.9);
+    border: 2px solid cyan;
+    box-shadow: 0px 0px 15px cyan;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 320px;
+}
+
+.display {
+    background: black;
+    border: 2px solid cyan;
+    padding: 15px;
+    font-size: 2em;
+    text-align: right;
+    height: 60px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px cyan inset;
+    color: cyan;
+    overflow: hidden;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    font-size: 1.5em;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background: rgba(0, 255, 255, 0.2);
+    color: white;
+    box-shadow: 0px 0px 10px cyan;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: cyan;
+    color: black;
+}
+
+.operator {
+    background: rgba(255, 0, 255, 0.2);
+    box-shadow: 0px 0px 10px magenta;
+}
+
+.operator:hover {
+    background: magenta;
+    color: black;
+}
+
+.equal {
+    grid-column: span 2;
+    background: rgba(0, 255, 0, 0.2);
+    box-shadow: 0px 0px 10px lime;
+}
+
+.equal:hover {
+    background: lime;
+    color: black;
+}
